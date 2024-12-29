@@ -1,0 +1,116 @@
+/* App styling */
+.app {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  background-image: url('https://wallpapercave.com/wp/wp8332738.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.message {
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 20px; /* Add spacing between message and buttons */
+}
+
+.buttons {
+  display: flex;
+  gap: 20px; /* Add spacing between the buttons */
+}
+
+.yes-button,
+.no-button {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #4caf50;
+  color: white;
+  transition: background 0.3s;
+}
+
+.yes-button {
+  background: #4caf50;
+  left: 35%;
+}
+
+.yes-button:hover {
+  background: #45a049;
+}
+
+.no-button {
+  background: #f44336;
+}
+
+.no-button:hover {
+  background: #e57373;
+}
+
+/* Terminal screen styles */
+.terminal {
+  height: 100vh;
+  background: #1e1e1e;
+  color: #00ff00;
+  font-family: monospace;
+  display: block; /* No flexbox, just block-level layout */
+}
+
+.terminal-header {
+  background: #333;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjusts header content alignment */
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.button.red {
+  background: #ff5f56;
+}
+
+.button.yellow {
+  background: #ffbd2e;
+}
+
+.button.green {
+  background: #27c93f;
+}
+
+.terminal-body {
+  text-align: left; /* Aligns text to the left */
+  white-space: pre-wrap; /* Maintains whitespace formatting */
+}
+
+.terminal-text {
+  white-space: pre-wrap; /* Prevents text from breaking into new lines */
+  line-height: 1.5; /* Improves readability of multi-line text */
+  word-break: break-word; /* Prevents long text from breaking the layout */
+}
